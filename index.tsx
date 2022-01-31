@@ -9,7 +9,7 @@ import { h, ssr } from "https://crux.land/nanossr@0.0.1";
 
 import { Hello } from "./app.tsx"
 
-const PORT = Number(Deno.env.get("PORT") || "9090");
+const PORT = Number(Deno.env.get("PORT") ?? "9090");
 
 console.log(`Listening on http://localhost:${PORT}`);
 
