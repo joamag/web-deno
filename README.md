@@ -1,6 +1,6 @@
-# Tobias Web version
+# Web Interface using Deno
 
-Some of the web most promising templates here.
+Simple web components and interface using [Deno](https://deno.com/).
 
 ```bash
 deno run --no-check=remote --allow-net --allow-env index.tsx
