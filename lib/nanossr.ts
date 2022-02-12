@@ -3,7 +3,7 @@ export { tw } from "https://cdn.skypack.dev/twind";
 
 import {
   Helmet,
-  renderSSR as nanoRender,
+  renderSSR,
 } from "https://deno.land/x/nano_jsx/mod.ts";
 import { setup } from "https://cdn.skypack.dev/twind";
 import {
@@ -48,7 +48,7 @@ const html = ({ body, head, footer, styleTag }: { body: string, head: string[], 
 
 export function ssr(render: CallableFunction, options?: Options) {
   sheet(options?.tw ?? {}).reset();
-  const app = nanoRender(render());
+  const app = renderSSR(render());
   let { body, head, footer } = Helmet.SSR(app);
   head = head.concat(options?.head ?? []);
   footer = head.concat(options?.footer ?? []);
