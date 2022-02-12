@@ -4,9 +4,9 @@
 /// <reference lib="dom.asynciterable" />
 /// <reference lib="deno.ns" />
 
-import { h, tw } from "./lib/nanossr.ts"
+import { h, tw } from "./lib/nanossr.ts";
 
-import { Container, Title, SubTitle, Image } from "./components.tsx"
+import { Container, Image, SubTitle, Title } from "./components.tsx";
 
 export const Hello = (props: { name: any }) => (
   <div class={tw`h-screen bg-gray-100 pt-12 pb-12`}>

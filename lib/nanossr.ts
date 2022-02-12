@@ -1,10 +1,7 @@
 export * from "https://deno.land/x/nano_jsx/mod.ts";
 export { tw } from "https://cdn.skypack.dev/twind";
 
-import {
-  Helmet,
-  renderSSR,
-} from "https://deno.land/x/nano_jsx/mod.ts";
+import { Helmet, renderSSR } from "https://deno.land/x/nano_jsx/mod.ts";
 import { setup } from "https://cdn.skypack.dev/twind";
 import {
   getStyleTag,
@@ -30,7 +27,14 @@ function setupSheet(twOptions: Record<string, any>) {
   return sheet;
 }
 
-const html = ({ body, head, footer, styleTag }: { body: string, head: string[], footer: string[], styleTag: string }) => (`
+const html = (
+  { body, head, footer, styleTag }: {
+    body: string;
+    head: string[];
+    footer: string[];
+    styleTag: string;
+  },
+) => (`
 <!DOCTYPE html>
 <html lang="en">
   <head>
