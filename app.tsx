@@ -4,7 +4,7 @@
 /// <reference lib="dom.asynciterable" />
 /// <reference lib="deno.ns" />
 
-import { h, tw } from "https://crux.land/nanossr@0.0.1";
+import { h, tw } from "./lib/nanossr.ts"
 
 import { Container, Title, SubTitle, Image } from "./components.tsx"
 

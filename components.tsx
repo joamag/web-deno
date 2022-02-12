@@ -4,7 +4,7 @@
 /// <reference lib="dom.asynciterable" />
 /// <reference lib="deno.ns" />
 
-import { h, tw } from "https://crux.land/nanossr@0.0.1";
+import { h, tw } from "./lib/nanossr.ts"
 
 export const Container = (props: { children: any; }) => (
   <div class={tw`bg-white rounded-2xl shadow backdrop-filter backdrop-blur-3xl pt-8 pb-8 px-8 lg:px-12 w-full mt-4`} style={{ width: "600px", margin: "auto" }}>
